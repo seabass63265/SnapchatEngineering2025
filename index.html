@@ -1,31 +1,208 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
+    <title>Seablast Swim Gear Catalog</title>
+    <meta name="description" content="A catalog of recommended swim gear by Seablast Swim School." />
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="scripts.js" defer></script>
   </head>
-
   <body>
+
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://media.discordapp.net/attachments/984539241428164709/1360841080748376377/image.jpg?ex=67fe8fc4&is=67fd3e44&hm=84dddc349900295c91ba97726c2271d548bc4e685d030d23cb96ad6f3509f45b&=&format=webp&width=946&height=946" alt="Seablast Logo" class="logo-img" />
+        <span>Seablast</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#lessons">Swim Lessons</a></li>
+        <li><a href="#adults">Adult Programs</a></li>
+        <li><a href="#gear" class="active">Gear</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+
     <header class="main-header">
-      <h1 class="title">LA TV Shows</h1>
+      <h1 class="title">Welcome to Seablast Swim School</h1>
+      <p class="subtitle">Helping all ages gain confidence, skills, and joy in the water</p>
     </header>
+
+    <div class="wave-container"></div>
+
+    <section class="description" id="about">
+      <h2>About Seablast</h2>
+      <div class="about-flex">
+        <img src="https://cdn.discordapp.com/attachments/984539241428164709/1361162255500050622/image.jpg?ex=67ff1222&is=67fdc0a2&hm=b76d6e4aa57d33d39edd4a094465392a6fa2f4afbfb07c22159fc975d5f45526&format=webp&width=552&height=982" alt="Coast" class="about-img" />
+        <div class="about-text">
+          <p>Hi, I’m Sebastian – aka Seabass!
+          I founded Seablast Swim School in 2023 and am currently the head swim instructor. I’ve been swimming since I was 4 years old, learning through many of the same techniques I now use to teach my students today.
+          </p>
+          <p>With over six years of experience as a certified Red Cross Water Safety Instructor (WSI) and StarGuard Instructor, and three years as an Ocean Lifeguard, I bring valuable experience in water safety, rescue training, and emergency response to every lesson.
+          </p>
+          <p>As a bilingual Spanish speaker, I’m proud to offer a welcoming, inclusive, and confidence-building environment for swimmers of all ages and backgrounds.
+          </p>
+        </div>
+        <img src="https://media.discordapp.net/attachments/984539241428164709/1361188256942919700/image.jpg?ex=67fdd8da&is=67fc875a&hm=1c565a048039015b58eeb038e00845bf56c78b300dd8fa368d2113b9f9388314&=&format=webp&width=552&height=982" alt="Lifeguard tower at sunset" class="about-img" />
+      </div>
+    </section>
+    
+
+    <div class="wave-container"></div>
+
+
+    <section class="highlight" id="lessons">
+      <h2>Swim Lessons</h2>
+      <div class="about-flex">
+        <img src="https://media.discordapp.net/attachments/984539241428164709/1361192132697657465/image.jpg?ex=67fddc76&is=67fc8af6&hm=bf6befdbdcc79b7a61363c9997ddf3836e723b536e090184cd3cce03a16c08a5&=&format=webp&width=736&height=982" alt="Swim lesson" class="swim-lesson-img" />
+        
+        <div class="about-text">
+          <p>
+            At Seablast, our swim lessons are built to encourage safety, confidence, and fun in the water. We teach kids as young as 2 all the way up to adults who are either learning for the first time or looking to take their skills further.
+          </p>
+          <p>
+            Whether it's learning to float, mastering freestyle, or preparing for ocean waves, our sessions are personalized to your needs. We offer private, group, and open water lessons to match your comfort level and goals.
+          </p>
+          <p>
+            With our hands-on and encouraging approach, we make sure every swimmer progresses with confidence — one splash at a time.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <div class="wave-container"></div>
+
+
+    <section class="highlight" id="adults">
+      <h2>Adult Programs</h2>
+      <div class="lesson-content">
+        <img src="https://static.tildacdn.net/tild3136-6165-4637-a437-633437376161/open_water_swim_less.jpeg" alt="Open Water Swim" class="swim-lesson-img" />
+        <div class="lesson-text">
+          <p>Our adult programs are designed for swimmers of all skill levels, from beginners learning fundamentals to experienced athletes training for endurance and performance.</p>
+          <p>We specialize in open water training, wave survival techniques, form improvement, and confidence building — perfect for ocean swimmers and triathletes.</p>
+          <p>Beginner swimmers are welcome to take lessons at their own pool or at our pool located in the North of Montana area in Santa Monica, depending on availability. Whether you're just starting out or looking to level up, we’ll meet you where you’re comfortable and help you build confidence at your own pace</p>
+        </div>
+      </div>
+    </section>
+    
+
+    <div class="wave-container"></div>
+
+
+    <section class="description" id="gear">
+      <h2>Seablast Gear Recommendations</h2>
+      <p>
+        I’ve carefully selected all of the gear featured in this catalog based on what I truly believe supports swimmers of all levels — from beginners learning to float to advanced athletes training for open water. Each item has been chosen for its reliability, comfort, and how well it complements different swim goals.
+      </p>
+    </section>
+
+    <div class="controls">
+      <label for="gearTypeFilter">Dive Into:</label>
+      <select id="gearTypeFilter" onchange="filterByType()">
+        <option value="all">All</option>
+        <option value="Goggles">Goggles</option>
+        <option value="Training Equipment">Training Equipment</option>
+        <option value="Snorkels">Snorkels</option>
+        <option value="Fins">Fins</option>
+        <option value="Swim Caps">Swim Caps</option>
+        <option value="Resistance Equipment">Resistance Equipment</option>
+        <option value="Open Water Gear">Open Water Gear</option>
+        <option value="Floatation Devices">Floatation Devices</option>
+        <option value="Seabass">What is Seabass rocking?</option>
+      </select>
+      <button onclick="sortByPrice()">Sort by Price (Low to High)</button>
+      <button onclick="toggleSortByPrice()">Sort by Price (High to Low)</button>
+    </div>
+
     <div id="card-container"></div>
+
     <div class="card" style="display: none">
       <div class="card-content">
-        <h2>TV Show Title</h2>
-        <img src="" alt="TV Show Poster" />
+        <h2>Gear Name</h2>
+        <img src="" alt="Swim Gear Image" />
         <ul>
-          <li>Bullet Point 1</li>
-          <li>Bullet Point 2</li>
-          <li>Bullet Point 3</li>
+          <li>Type</li>
+          <li>Price</li>
+          <li>Level</li>
         </ul>
       </div>
     </div>
+
+
+    <section class="highlight milestone-section" id="milestone">
+      <h2>This is why we do what we do</h2>
+      <p>Watching someone swim on their own for the first time never gets old. These are the moments that keep us going.</p>
+      <div class="video-container">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/9q-PYNQYS2Y" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+
+    
+
+    
+    <section class="highlight" id="contact">
+      <section class="highlight" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or ready to dive in? Whether you're looking to book a lesson, ask about availability, or just want to learn more about Seablast — we’re here to help.
+          Fill out the form below and we’ll get back to you as soon as possible. We can't wait to hear from you!
+          </p>
+     
+      
+        <form action="https://formspree.io/f/myzeoqee" method="POST" class="contact-form">
+          <input type="text" name="firstName" placeholder="First Name *" required />
+          <input type="text" name="lastName" placeholder="Last Name *" required />
+          <input type="email" name="email" placeholder="Email *" required />
+          <input type="email" name="confirmEmail" placeholder="Confirm Email *" required />
+          <input type="tel" name="phone" placeholder="Phone # *" required />
+          <input type="text" name="bestTime" placeholder="Best time to call back?" />
+          <select name="location" required>
+            <option value="">Select Location</option>
+            <option value="Santa Monica">Santa Monica</option>
+            <option value="Venice">Venice</option>
+            <option value="Malibu">Malibu</option>
+            <option value="Marina Del Rey">Marina Del Rey</option>
+            <option value="WestLa">WestLa</option>
+            <option value="Other">Other</option>
+
+
+          </select>
+          <textarea name="message" placeholder="Your Questions"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        
+      </section>
+
+
+
+
+      
+      
+
+    </section>
+
     <div class="footer">
-      <button onclick="quoteAlert();">Get A Quote!</button>
-      <button onclick="removeLastCard();">Remove A Card!</button>
+      <button onclick="quoteAlert();">Visit Seablast on Instagram</button>
+      <button onclick="suggestRandomGear();">Suggest Me a Gear</button>
     </div>
+
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="https://media.discordapp.net/attachments/984539241428164709/1361547722922000485/image.png?ex=67ff27a1&is=67fdd621&hm=36ad6fa78c2f40bf4c835a523d3e988ac4255366d22e40f2243158d1811ddbe0&=&format=webp&quality=lossless&width=2464&height=704" alt="Seablast Logo" />
+      </div>
+    
+      <div class="footer-text">
+        <p>Email: seabass63265.sr@gmail.com</p>
+        <p>Tel: 310 499 3005</p>
+
+      </div>
+    
+      <div class="footer-copy">
+        <p>© 2023–2025 Seablast Swim School<br>All Rights Reserved</p>
+      </div>
+    </div>
+    
   </body>
 </html>
